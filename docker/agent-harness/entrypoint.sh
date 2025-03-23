@@ -16,7 +16,7 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-python itbench_tools/agent_harness/main.py \
+python itbench_utilities/agent_harness/main.py \
   --agent_directory /etc/ciso-agent \
   -i /tmp/agent-manifest.json \
   -c /etc/ciso-agent/agent-harness.yaml \

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 version = "0.0.1"
-name = "itbench-tools"
+name = "itbench-utilities"
 requires-python = ">=3.11"
 keywords = ["one", "two"]
 classifiers = [
@@ -23,7 +23,7 @@ dependencies = [
 ]
 
 [project.scripts]
-itbench-tools = "itbench_tools.main:main"
+itbench-utilities = "itbench_utilities.main:main"
 
 [project.optional-dependencies]
 dev = [
@@ -39,7 +39,7 @@ dev = [
 ]
 
 [tool.setuptools]
-package-dir = { "itbench_tools" = "itbench_tools" }
+package-dir = { "itbench_utilities" = "itbench_utilities" }
 
 [tool.pytest.ini_options]
 log_cli = true

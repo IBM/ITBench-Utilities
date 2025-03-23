@@ -15,7 +15,7 @@
 from datetime import datetime
 from typing import List, Optional, Tuple
 
-from itbench_tools.models.bundle import BundleCondition, BundleStatus
+from itbench_utilities.models.bundle import BundleCondition, BundleStatus
 
 
 def build(type_status_reason_trios: List[Tuple[str, str, Optional[str]]], current: Optional[BundleStatus] = None) -> BundleStatus:

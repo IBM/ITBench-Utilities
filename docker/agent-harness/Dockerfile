@@ -2,7 +2,7 @@ FROM python:3.11.10-slim
 
 RUN apt update -y && apt install -y curl gnupg2
 RUN mkdir /etc/agent-benchmark
-COPY itbench_tools /etc/agent-benchmark/itbench_tools
+COPY itbench_utilities /etc/agent-benchmark/itbench_utilities
 COPY pyproject.toml /etc/agent-benchmark/pyproject.toml
 COPY docker/agent-harness/entrypoint.sh /etc/entrypoint.sh
 RUN chmod +x /etc/entrypoint.sh

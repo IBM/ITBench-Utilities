@@ -18,7 +18,7 @@ sed -i "s/^port: .*/port: $port/" /etc/config.yaml
 
 token=`jq -r .token /tmp/agent-manifest.json`
 
-python itbench_tools/bench_runner/main.py runner \
+python itbench_utilities/bench_runner/main.py runner \
   -c /etc/config.yaml \
   --runner_id $runner_id \
   --token $token \
