@@ -4,6 +4,7 @@ RUN apt update -y && apt install -y curl gnupg2 unzip
 RUN mkdir /etc/agent-benchmark
 COPY itbench_utilities /etc/agent-benchmark/itbench_utilities
 COPY pyproject.toml /etc/agent-benchmark/pyproject.toml
+RUN pip install --upgrade setuptools
 RUN pip install -e /etc/agent-benchmark --no-cache-dir
 RUN pip install -r /etc/agent-benchmark/itbench_utilities/bench_runner/sre_bench/requirements.txt --no-cache-dir
 RUN ansible-galaxy install -r /etc/agent-benchmark/itbench_utilities/bench_runner/sre_bench/requirements.yaml
