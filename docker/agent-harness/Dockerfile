@@ -1,4 +1,4 @@
-FROM python:3.11.10-slim
+FROM python:3.11-slim
 
 RUN apt update -y && apt install -y curl gnupg2
 RUN mkdir /etc/agent-benchmark
