@@ -10,8 +10,8 @@ This repository provides a toolkit for [ITBench](https://github.com/IBM/itbench)
 ## 🛠️ Build and Push (Multi-Arch)
 
 ```bash
-bench_runner_name="icr.io/agent-bench/bench-runner-base:0.0.1"
-agent_harness_name="icr.io/agent-bench/agent-harness-base:0.0.1"
+bench_runner_name="ghcr.io/ibm/itbench-utilities/bench-runner-base:0.0.1"
+agent_harness_name="ghcr.io/ibm/itbench-utilities/agent-harness-base:0.0.1"
 
 # Build and push bench-runner base image
 docker buildx build --platform linux/amd64,linux/arm64 \

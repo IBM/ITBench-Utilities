@@ -16,6 +16,8 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+export PYTHONUNBUFFERED=1
+
 python itbench_utilities/agent_harness/main.py \
   --agent_directory /etc/ciso-agent \
   -i /tmp/agent-manifest.json \

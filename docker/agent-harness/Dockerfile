@@ -1,5 +1,7 @@
 FROM python:3.11-slim
 
+LABEL org.opencontainers.image.source=https://github.com/IBM/ITBench-Utilities
+
 RUN apt update -y && apt install -y curl gnupg2
 RUN mkdir /etc/agent-benchmark
 COPY itbench_utilities /etc/agent-benchmark/itbench_utilities
