@@ -5,8 +5,8 @@ cd /etc/agent-benchmark
 port="443"
 root_path="/bench-server"
 benchmark_timeout="300"
-benchmark_exec_max_attempts="3"
-benchmark_exec_retry_interval="5"
+benchmark_exec_max_attempts="10"
+benchmark_exec_retry_interval="60"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
